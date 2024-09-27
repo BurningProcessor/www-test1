@@ -1,0 +1,94 @@
+@import url(./css/menu-button.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply bg-slate-200 text-sm dark:bg-slate-900;
+	}
+
+	td {
+		@apply capitalize;
+	}
+}
+@layer components {
+	h1 {
+		@apply text-lg;
+	}
+
+	.btn {
+		@apply items-center gap-2 rounded-md px-4 py-2 text-white disabled:cursor-not-allowed disabled:bg-gray-400 disabled:hover:bg-gray-400;
+	}
+
+	.input {
+		@apply rounded-md border border-slate-800 bg-transparent p-2 outline-none placeholder:text-white focus:border-slate-300;
+	}
+
+	.container {
+		@apply min-w-[320px] max-w-[1000px];
+	}
+
+	.menu {
+		@apply absolute top-[3rem] left-2 mx-0 rounded-lg bg-white dark:bg-slate-700 shadow-lg md:static md:z-auto md:items-center md:bg-transparent md:shadow-transparent md:dark:bg-transparent;
+	}
+
+	.inactive-text {
+		@apply text-gray-400;
+	}
+
+	.card {
+		@apply rounded-md bg-white hover:shadow-md p-4 dark:bg-slate-800 min-h-20 min-w-48;
+	}
+
+	input[type='text'],
+	input[type='password'],
+	input[type='email'],
+	input[type='number'],
+	input[type='url'],
+	input[type='date'],
+	input[type='datetime-local'],
+	input[type='month'],
+	input[type='week'],
+	input[type='time'],
+	input[type='search'],
+	input[type='tel'],
+	input[type='checkbox'],
+	input[type='radio'],
+	select,
+	select[multiple],
+	textarea,
+	fieldset {
+		@apply rounded-md border border-slate-400 bg-transparent p-2 outline-none placeholder:text-gray-400 focus:border-slate-300 dark:border-slate-700;
+	}
+
+	input[type='radio'] {
+		@apply rounded-full mx-1;
+	}
+
+	form .error_msg {
+		@apply text-sm text-red-500
+	}
+
+	span {
+		@apply block
+	}
+
+	fieldset > label > span {
+		@apply inline
+	}
+}
+@layer utilities {
+	.btn-red {
+		@apply bg-rose-500 hover:bg-rose-600 dark:bg-rose-900 dark:hover:bg-rose-800;
+	}
+
+	.btn-green {
+		@apply bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-800;
+	}
+
+	.btn-blue {
+		@apply bg-blue-500 hover:bg-blue-600 dark:bg-blue-900 dark:hover:bg-blue-800;
+	}
+}
