@@ -1,8 +1,10 @@
 {
-	"name": "www2",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
+	"name": "www-test1",
+	"version": "0.1.1",
+	"description": "this is a test frontend for show",
+	"author": "BurningProcessor",
+	"private": false,
+	"license": "UNLICENSED",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
