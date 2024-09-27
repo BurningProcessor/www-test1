@@ -14,6 +14,7 @@ const Dashboard: FC = () => {
 
 	useEffect(() => {
 		getDoings()
+		console.debug('axios url = ' + instance.getUri())
 	}, [])
 
 	return (
