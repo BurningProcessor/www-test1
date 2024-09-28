@@ -34,7 +34,6 @@ const Members: FC = () => {
 		if (nameValue && emailValue) requestData = requestData + '&'
 		if (emailValue) requestData = requestData + `email=${emailValue}`
 
-		if (requestData != '&') setReq(requestData)
 		if (requestData != '&') getMembers(requestData)
 		else getMembers()
 	}
