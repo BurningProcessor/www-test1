@@ -15,7 +15,10 @@
 }
 @layer components {
 	h1 {
-		@apply text-lg;
+		@apply text-4xl;
+	}
+	h2 {
+		@apply text-xl;
 	}
 
 	.btn {
@@ -76,7 +79,11 @@
 	}
 
 	fieldset > label > span {
-		@apply inline
+		@apply inline mr-2
+	}
+
+	#member-search, #sortset {
+		@apply border-transparent bg-white dark:bg-slate-800
 	}
 }
 @layer utilities {
